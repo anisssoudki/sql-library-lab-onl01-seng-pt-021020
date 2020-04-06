@@ -31,7 +31,7 @@ def select_series_title_with_most_human_characters
   "select series.title
   from series
   inner join characters
-  on characters.series_id = series.id AND characters.species = 'human'
+  on characters.series_id = series.id 
   group by series.title
   limit 1;
   "
